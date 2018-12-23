@@ -1,0 +1,24 @@
+package com.ch6;
+
+class Tv{
+	String color;
+	boolean power;
+	int chn;
+	
+	void power() {
+		power = !power;
+	}
+	
+	void chnUp() {
+		chn += 1;
+	}
+	
+	void chnDown() {
+		chn -= 1;
+	}
+}
+
+
+public class TvTest2 {
+
+}
