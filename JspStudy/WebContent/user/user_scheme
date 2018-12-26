@@ -1,0 +1,43 @@
+CREATE TABLE `USER` (
+
+  `USER_NID` int(11) NOT NULL,
+
+  `NAME` varchar(20) DEFAULT NULL COMMENT '이름',
+
+  `EMAIL` varchar(500) DEFAULT NULL COMMENT '이메일',
+
+  `MESSAGE` text COMMENT '내용',
+
+  `LIKE_ITEM_KIND` varchar(10) DEFAULT NULL COMMENT '좋아하는 항목종류',
+
+  `LIKE_ITEM` varchar(10) DEFAULT NULL COMMENT '종하는 항목',
+
+  `FAVCOLOR` varchar(20) DEFAULT NULL COMMENT '좋아하는 색',
+
+  `GENDER` varchar(10) DEFAULT NULL COMMENT '성별',
+
+  `BROWSER` varchar(20) DEFAULT NULL COMMENT '브라우저',
+
+  `REGI_DT` datetime DEFAULT NULL COMMENT '등록일',
+
+  PRIMARY KEY (`USER_NID`)
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ 
+
+ 
+
+ CREATE TABLE `USER_LIKE_ITEM` (
+
+  `USER_LIKE_ITEM_NID` int(11) NOT NULL,
+
+  `LIKE_ITEM_NM` varchar(50) DEFAULT NULL COMMENT '좋아하는 아이템 항목' ,
+
+  `USER_NID` int(11) NOT NULL,
+
+  `REGI_DT` datetime DEFAULT NULL COMMENT '등록일',
+
+  PRIMARY KEY (`USER_LIKE_ITEM_NID`)
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

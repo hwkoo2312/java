@@ -1,0 +1,1 @@
+INDEX VERSION 1.130+C:\Study\JavaStudy\JspStudy\.metadata\.plugins\org.eclipse.jdt.core
